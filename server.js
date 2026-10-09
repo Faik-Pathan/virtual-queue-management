@@ -87,7 +87,7 @@ app.post("/api/reset", adminOnly, (_, res) => {
 app.listen(3000, () => console.log("QueueEase API → http://localhost:3000"));
 app.use(express.static(path.join(__dirname, "dist")));
 
-app.get("*", (_, res) => {
+app.get("/{*path}", (req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
 
