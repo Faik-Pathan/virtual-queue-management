@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Virtual Queue Management System</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-BAxcZ32J.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        <div class="logo-icon">Q</div>
+
+        <div>
+            <h2>QueueEase</h2>
+            <span>PDEA College of Engineering</span>
+        </div>
+    </div>
+
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#workflow">How It Works</a>
+        <a href="#booking">Book Token</a>
+        <a href="#queue">Queue Status</a>
+
+        <button class="admin-btn" onclick="openAdminLogin()">
+            Admin
+        </button>
+    </div>
+
+</nav>
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <span class="badge">
+            Smart Queue Management
+        </span>
+
+        <h1>
+            Skip the Wait.<br>
+            <span>Manage Your Queue.</span>
+        </h1>
+
+        <p>
+            A smart Virtual Queue Management System designed to
+            reduce waiting time and improve service efficiency.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#booking" class="primary-btn">
+                Book Your Token
+            </a>
+
+            <a href="#queue" class="secondary-btn">
+                Check Queue Status
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Queue Preview -->
+
+    <div class="queue-card">
+
+        <div class="queue-header">
+
+            <div>
+                <span>LIVE QUEUE</span>
+                <h3>Current Status</h3>
+            </div>
+
+            <div class="live">
+                <span></span> LIVE
+            </div>
+
+        </div>
+
+
+        <div class="queue-main">
+
+            <div>
+                <small>NOW SERVING</small>
+
+                <strong id="heroServing">
+                    A102
+                </strong>
+            </div>
+
+            <div class="divider"></div>
+
+            <div>
+                <small>YOUR TOKEN</small>
+
+                <strong id="heroNext">
+                    A103
+                </strong>
+            </div>
+
+        </div>
+
+
+        <div class="queue-footer">
+
+            <div>
+                <span>Waiting</span>
+                <b id="heroWaiting">17</b>
+            </div>
+
+            <div>
+                <span>Completed</span>
+                <b id="heroCompleted">98</b>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FEATURES ================= -->
+
+<section id="features" class="section">
+
+    <div class="section-heading">
+
+        <span>FEATURES</span>
+
+        <h2>
+            Everything You Need for
+            <strong>Smart Queue Management</strong>
+        </h2>
+
+        <p>
+            Simple, fast and efficient queue management for
+            institutions and service centers.
+        </p>
+
+    </div>
+
+
+    <div class="features-grid">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">🎫</div>
+
+            <h3>Online Token Booking</h3>
+
+            <p>
+                Generate your token online without standing
+                physically in a queue.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">📊</div>
+
+            <h3>Live Queue Status</h3>
+
+            <p>
+                View the currently serving token and number
+                of people waiting.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">⚡</div>
+
+            <h3>Faster Service</h3>
+
+            <p>
+                Improve service efficiency by organizing
+                customers digitally.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">🖥️</div>
+
+            <h3>Admin Dashboard</h3>
+
+            <p>
+                Administrators can manage tokens, counters
+                and services from one dashboard.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= WORKFLOW ================= -->
+
+<section id="workflow" class="section workflow-section">
+
+    <div class="section-heading">
+
+        <span>HOW IT WORKS</span>
+
+        <h2>
+            Simple <strong>4-Step Process</strong>
+        </h2>
+
+    </div>
+
+
+    <div class="workflow">
+
+        <div class="step">
+
+            <div class="step-number">01</div>
+
+            <h3>Visit Website</h3>
+
+            <p>
+                Open the Virtual Queue Management System.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">02</div>
+
+            <h3>Book Token</h3>
+
+            <p>
+                Enter your details and select a service.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">03</div>
+
+            <h3>Track Queue</h3>
+
+            <p>
+                Monitor your token using live queue status.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">04</div>
+
+            <h3>Get Service</h3>
+
+            <p>
+                Visit the counter when your token is called.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= BOOK TOKEN ================= -->
+
+<section id="booking" class="section booking-section">
+
+    <div class="section-heading">
+
+        <span>BOOK TOKEN</span>
+
+        <h2>
+            Get Your Token <strong>Online</strong>
+        </h2>
+
+        <p>
+            Fill the form below to generate your queue token.
+        </p>
+
+    </div>
+
+
+    <div class="booking-card">
+
+        <form id="tokenForm" onsubmit="generateToken(event)">
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label>Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Mobile Number</label>
+
+                    <input
+                        type="tel"
+                        id="mobile"
+                        placeholder="Enter mobile number"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label>Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Select Service</label>
+
+                    <select id="service" required>
+
+                        <option value="">
+                            Select Service
+                        </option>
+
+                        <option>
+                            Student Section
+                        </option>
+
+                        <option>
+                            Examination Section
+                        </option>
+
+                        <option>
+                            Accounts Section
+                        </option>
+
+                        <option>
+                            Admission Section
+                        </option>
+
+                        <option>
+                            General Enquiry
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <button class="primary-btn full-btn">
+
+                Generate Token
+
+            </button>
+
+        </form>
+
+
+        <!-- Token Result -->
+
+        <div id="tokenResult" class="token-result hidden">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <p>Your Token Number</p>
+
+            <h2 id="generatedToken">
+                A106
+            </h2>
+
+            <span id="generatedName">
+                Hello!
+            </span>
+
+            <p>
+                Please wait for your token to be called.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= QUEUE STATUS ================= -->
+
+<section id="queue" class="section queue-section">
+
+    <div class="section-heading">
+
+        <span>LIVE QUEUE</span>
+
+        <h2>
+            Current Queue <strong>Status</strong>
+        </h2>
+
+    </div>
+
+
+    <div class="queue-status-grid">
+
+        <div class="status-card">
+
+            <span>NOW SERVING</span>
+
+            <strong id="statusServing">
+                A102
+            </strong>
+
+        </div>
+
+
+        <div class="status-card">
+
+            <span>NEXT TOKEN</span>
+
+            <strong id="statusNext">
+                A103
+            </strong>
+
+        </div>
+
+
+        <div class="status-card">
+
+            <span>PEOPLE WAITING</span>
+
+            <strong id="statusWaiting">
+                17
+            </strong>
+
+        </div>
+
+
+        <div class="status-card">
+
+            <span>COMPLETED</span>
+
+            <strong id="statusCompleted">
+                98
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= TEAM ================= -->
+
+<section class="section team-section">
+
+    <div class="section-heading">
+
+        <span>PROJECT TEAM</span>
+
+        <h2>
+            Our <strong>Team</strong>
+        </h2>
+
+    </div>
+
+
+    <div class="team-grid">
+
+        <div class="team-card">
+
+            <div class="avatar">
+                AP
+            </div>
+
+            <h3>Amay Puranik</h3>
+
+            <p>Roll No. 69</p>
+
+        </div>
+
+
+        <div class="team-card">
+
+            <div class="avatar">
+                AS
+            </div>
+
+            <h3>Aman Shaikh</h3>
+
+            <p>Roll No. 71</p>
+
+        </div>
+
+
+        <div class="team-card">
+
+            <div class="avatar">
+                SJ
+            </div>
+
+            <h3>Sairaj Jadhav</h3>
+
+            <p>Roll No. 72</p>
+
+        </div>
+
+
+        <div class="team-card">
+
+            <div class="avatar">
+                FP
+            </div>
+
+            <h3>Faik Pathan</h3>
+
+            <p>Roll No. 74</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div>
+
+        <h3>QueueEase</h3>
+
+        <p>
+            Virtual Queue Management System
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <p>
+            PDEA's College of Engineering
+        </p>
+
+        <p>
+            Department of Information Technology
+        </p>
+
+        <p>
+            Academic Year 2026–27
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <p>
+            Project Guide: S. A. Patil
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ================================================= -->
+<!-- ================= ADMIN DASHBOARD =============== -->
+<!-- ================================================= -->
+
+<section id="adminView" class="admin-view hidden">
+
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <div class="logo-icon">
+                Q
+            </div>
+
+            <div>
+
+                <h2>QueueEase</h2>
+
+                <span>Admin Panel</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="sidebar-menu">
+
+            <button class="active">
+                📊 Dashboard
+            </button>
+
+            <button onclick="scrollToAdmin('tokens')">
+                🎫 Tokens
+            </button>
+
+            <button onclick="scrollToAdmin('services')">
+                🛠 Services
+            </button>
+
+            <button onclick="scrollToAdmin('counters')">
+                🖥 Counters
+            </button>
+
+            <button onclick="showReports()">
+                📈 Reports
+            </button>
+
+            <button onclick="backToWebsite()">
+                🌐 Public Website
+            </button>
+
+        </div>
+
+
+        <button class="logout-btn" onclick="backToWebsite()">
+            Logout
+        </button>
+
+    </aside>
+
+
+
+    <!-- Admin Main -->
+
+    <main class="admin-main">
+
+
+        <!-- Topbar -->
+
+        <div class="admin-topbar">
+
+            <div>
+
+                <span>ADMIN DASHBOARD</span>
+
+                <h1>Queue Management</h1>
+
+            </div>
+
+
+            <div class="admin-user">
+
+                <div class="admin-avatar">
+                    A
+                </div>
+
+                <div>
+
+                    <strong>Administrator</strong>
+
+                    <small>Online</small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Stats -->
+
+        <div class="admin-stats">
+
+            <div class="admin-stat">
+
+                <span>Total Tokens</span>
+
+                <strong id="adminTotal">
+                    105
+                </strong>
+
+            </div>
+
+
+            <div class="admin-stat">
+
+                <span>Now Serving</span>
+
+                <strong id="adminServing">
+                    A102
+                </strong>
+
+            </div>
+
+
+            <div class="admin-stat">
+
+                <span>Waiting</span>
+
+                <strong id="adminWaiting">
+                    17
+                </strong>
+
+            </div>
+
+
+            <div class="admin-stat">
+
+                <span>Completed</span>
+
+                <strong id="adminCompleted">
+                    98
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Token Management -->
+
+        <div id="tokens" class="admin-card">
+
+            <div class="admin-card-header">
+
+                <div>
+
+                    <span>TOKEN MANAGEMENT</span>
+
+                    <h2>Recent Token Bookings</h2>
+
+                </div>
+
+                <button
+                    class="secondary-btn"
+                    onclick="refreshAdmin()"
+                >
+                    Refresh
+                </button>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Token</th>
+                            <th>Name</th>
+                            <th>Service</th>
+                            <th>Time</th>
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="bookingTable">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Counter Status -->
+
+        <div id="counters" class="admin-card">
+
+            <div class="admin-card-header">
+
+                <div>
+
+                    <span>COUNTER STATUS</span>
+
+                    <h2>Service Counters</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="counter-grid">
+
+
+                <div class="counter-card">
+
+                    <div>
+
+                        <span>Counter 01</span>
+
+                        <h3>
+                            Main Office
+                        </h3>
+
+                    </div>
+
+                    <b class="online-status">
+                        ● Active
+                    </b>
+
+                    <strong id="counterToken">
+                        A102
+                    </strong>
+
+                </div>
+
+
+                <div class="counter-card">
+
+                    <div>
+
+                        <span>Counter 02</span>
+
+                        <h3>
+                            Student Section
+                        </h3>
+
+                    </div>
+
+                    <b class="offline-status">
+                        ● Available
+                    </b>
+
+                    <strong>
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="counter-card">
+
+                    <div>
+
+                        <span>Counter 03</span>
+
+                        <h3>
+                            Accounts
+                        </h3>
+
+                    </div>
+
+                    <b class="offline-status">
+                        ● Available
+                    </b>
+
+                    <strong>
+                        —
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Services -->
+
+        <div id="services" class="admin-card">
+
+            <div class="admin-card-header">
+
+                <div>
+
+                    <span>SERVICE MANAGEMENT</span>
+
+                    <h2>Available Services</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="service-list">
+
+                <div>
+                    Student Section
+                    <b>Active</b>
+                </div>
+
+                <div>
+                    Examination Section
+                    <b>Active</b>
+                </div>
+
+                <div>
+                    Accounts Section
+                    <b>Active</b>
+                </div>
+
+                <div>
+                    Admission Section
+                    <b>Active</b>
+                </div>
+
+                <div>
+                    General Enquiry
+                    <b>Active</b>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Quick Actions -->
+
+        <div class="admin-card">
+
+            <div class="admin-card-header">
+
+                <div>
+
+                    <span>QUICK ACTIONS</span>
+
+                    <h2>Queue Controls</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="quick-actions">
+
+                <button
+                    class="primary-btn"
+                    onclick="serveNext()"
+                >
+                    ▶ Serve Next
+                </button>
+
+
+                <button
+                    class="secondary-btn"
+                    onclick="completeToken()"
+                >
+                    ✓ Complete Token
+                </button>
+
+
+                <button
+                    class="secondary-btn"
+                    onclick="showReports()"
+                >
+                    📊 Reports
+                </button>
+
+
+                <button
+                    class="danger-btn"
+                    onclick="resetDemo()"
+                >
+                    Reset Demo
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+
+<!-- ================= ADMIN LOGIN MODAL ================= -->
+
+<div id="loginModal" class="modal hidden">
+
+    <div class="login-box">
+
+        <button
+            class="close-modal"
+            onclick="closeAdminLogin()"
+        >
+            ×
+        </button>
+
+
+        <div class="login-icon">
+            🔐
+        </div>
+
+
+        <h2>Admin Login</h2>
+
+        <p>
+            Login to manage the queue.
+        </p>
+
+
+        <form onsubmit="adminLogin(event)">
+
+            <input
+                type="text"
+                id="adminUsername"
+                placeholder="Username"
+                required
+            >
+
+
+            <input
+                type="password"
+                id="adminPassword"
+                placeholder="Password"
+                required
+            >
+
+
+            <button class="primary-btn full-btn">
+                Login
+            </button>
+
+        </form>
+
+
+        <small>
+            Demo: admin / admin123
+        </small>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
