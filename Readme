@@ -1,0 +1,5 @@
+1. Copy these files into your project folder (replace script.js, package.json; keep index.html + style.css).
+2. In index.html, add under the style.css link:  <link rel="stylesheet" href="enhance.css">
+3. npm install
+4. npm run dev   -> site on http://localhost:5173, API + SQLite on :3000
+Admin: admin / admin123   (set ADMIN_PASS env var to change)

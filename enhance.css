@@ -1,0 +1,32 @@
+/* Add AFTER style.css:  <link rel="stylesheet" href="enhance.css"> */
+:root{--ink:#09264d;--blue:#0b5ed7;--glow:#5aa2ff}
+.hero{position:relative;overflow:hidden;background:radial-gradient(900px 500px at 85% 10%,#cfe3ff,transparent 60%),radial-gradient(700px 400px at 0 100%,#e0ecff,transparent 60%),#f6f9fc}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(60px);opacity:.45;animation:drift 14s ease-in-out infinite alternate}
+.hero::before{width:320px;height:320px;background:var(--glow);top:-80px;right:30%}
+.hero::after{width:260px;height:260px;background:#9ec5ff;bottom:-60px;left:35%;animation-delay:-6s}
+.hero>*{position:relative;z-index:1}
+@keyframes drift{to{transform:translate(50px,40px) scale(1.15)}}
+.queue-card,.status-card,.admin-stat{backdrop-filter:blur(10px);background:rgba(255,255,255,.88)}
+.queue-main strong,.status-card strong,.token-result h2{font-variant-numeric:tabular-nums;transition:transform .3s}
+.bump{animation:bump .5s}
+@keyframes bump{40%{transform:scale(1.18)}}
+.live span{animation:pulse 1.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(25,135,84,.6)}100%{box-shadow:0 0 0 10px transparent}}
+.primary-btn{background:linear-gradient(135deg,#0b5ed7,#3d8bff);box-shadow:0 8px 20px rgba(11,94,215,.3)}
+.primary-btn:hover{transform:translateY(-2px)}
+.token-result{animation:pop .5s}
+@keyframes pop{from{transform:scale(.9);opacity:0}}
+.eta{display:inline-block;margin-top:8px;padding:6px 14px;border-radius:20px;background:#e5f0ff;color:var(--blue);font-weight:bold;font-size:13px}
+.charts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.chart-box{border:1px solid #e2e8f0;border-radius:12px;padding:16px}
+.chart-box h4{font-size:13px;color:#718096;margin-bottom:8px}
+.chart-box canvas{width:100%;height:190px;display:block}
+.donut-wrap{max-width:360px;margin:30px auto 0;background:#fff;border-radius:18px;padding:20px}
+.donut-wrap canvas{width:100%;height:200px}
+.status-badge[data-s=Serving]{background:#fff3cd;color:#8a6d00}
+.status-badge[data-s=Completed]{background:#e8f5e9;color:#198754}
+.status-badge[data-s=Waiting]{background:#e5f0ff;color:var(--blue)}
+.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,20px);background:var(--ink);color:#fff;padding:12px 22px;border-radius:10px;opacity:0;transition:.3s;z-index:9999}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:1000px){.charts{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
