@@ -29,4 +29,4 @@
 .toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,20px);background:var(--ink);color:#fff;padding:12px 22px;border-radius:10px;opacity:0;transition:.3s;z-index:9999}
 .toast.show{opacity:1;transform:translate(-50%,0)}
 @media(max-width:1000px){.charts{grid-template-columns:1fr}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}Get-ChildItem C:\Users\faikk\CEP -Recurse -Filter package.json -File -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
